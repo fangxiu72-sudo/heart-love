@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+}
+
+/* 表白层 */
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#overlay h1 {
+  color: #ff6b9c;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#overlay p {
+  color: #eee;
+  margin-bottom: 24px;
+}
+
+.btns {
+  pointer-events: auto;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 28px;
+  margin: 0 12px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background: #444;
+  color: #ccc;
+  position: relative;
+}
